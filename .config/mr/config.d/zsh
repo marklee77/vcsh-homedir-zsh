@@ -7,6 +7,6 @@ status   = vcsh zsh status
 gc       = vcsh zsh gc
 
 [.prezto]
-checkout = git https://github.com/sorin-ionescu/prezto.git .prezto
+checkout = git clone https://github.com/sorin-ionescu/prezto.git .prezto
 push = /bin/true
 
