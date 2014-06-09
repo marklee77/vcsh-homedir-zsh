@@ -41,4 +41,3 @@ export PATH="/usr/local/heroku/bin:$PATH"
 bindkey "^R" history-incremental-search-backward
 
 #source ~/.pyenv/versions/2.7.6/bin/aws_zsh_completer.sh
-
