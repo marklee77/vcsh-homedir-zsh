@@ -1,0 +1,1 @@
+/home/marklee/.zprezto/runcoms/zlogin

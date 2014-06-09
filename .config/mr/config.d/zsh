@@ -9,4 +9,4 @@ gc       = vcsh zsh gc
 [.zprezto]
 checkout = git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 push = /bin/true
-
+update = git pull && git submodule update --init --recursive
