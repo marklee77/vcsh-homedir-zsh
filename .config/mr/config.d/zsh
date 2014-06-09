@@ -1,0 +1,12 @@
+[$XDG_CONFIG_HOME/vcsh/repo.d/zsh.git]
+checkout = vcsh clone git@github.com:marklee77/vcsh-homedir-zsh.git zsh
+commit   = vcsh zsh commit -a
+update   = vcsh zsh pull
+push     = vcsh zsh push
+status   = vcsh zsh status
+gc       = vcsh zsh gc
+
+[.prezto]
+checkout = git https://github.com/sorin-ionescu/prezto.git .prezto
+push = /bin/true
+

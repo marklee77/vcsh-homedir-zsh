@@ -1,0 +1,8 @@
+*
+!.config
+!.config/mr
+!.config/mr/config.d
+!.config/mr/config.d/zsh
+!.gitignore.d
+!.gitignore.d/zsh
+!.zshrc
