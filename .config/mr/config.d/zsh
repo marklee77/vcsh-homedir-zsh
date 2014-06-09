@@ -6,7 +6,7 @@ push     = vcsh zsh push
 status   = vcsh zsh status
 gc       = vcsh zsh gc
 
-[.prezto]
-checkout = git clone https://github.com/sorin-ionescu/prezto.git .prezto
+[.zprezto]
+checkout = git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 push = /bin/true
 
