@@ -1,8 +1,8 @@
 [${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/zsh.git]
-checkout = vcsh clone git@github.com:marklee77/vcsh-homedir-zsh.git zsh
+checkout = vcsh clone https://github.com/marklee77/vcsh-homedir-zsh.git zsh
 commit   = vcsh zsh commit -a
 update   = vcsh zsh pull
-push     = vcsh zsh push
+push     = vcsh zsh push git@github.com:marklee77/vcsh-homedir-zsh.git 
 status   = vcsh zsh status
 gc       = vcsh zsh gc
 
