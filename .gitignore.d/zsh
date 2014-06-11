@@ -5,6 +5,7 @@
 !.config/mr/config.d/zsh
 !.gitignore.d
 !.gitignore.d/zsh
+!.inputrc
 !.zlogin
 !.zlogout
 !.zpreztorc
