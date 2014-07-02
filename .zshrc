@@ -29,6 +29,7 @@ if [ -d "${ZSHRCDIR}" ]; then
 fi
 
 export EDITOR="vim"
+export SVN_EDITOR="vim"
 export BROWSER="firefox"
 export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
