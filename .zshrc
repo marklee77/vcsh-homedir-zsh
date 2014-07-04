@@ -45,7 +45,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 bindkey "^R" history-incremental-search-backward
 
 # Set ruby-info parameters.
-zstyle ':prezto:module:ruby:info:version' format ' %F{white}%v%f'
-export RPROMPT='${ruby_info[version]}${vcs_info_msg_0_}'
+#zstyle ':prezto:module:ruby:info:version' format ' %F{white}%v%f'
+#export RPROMPT='${ruby_info[version]}${vcs_info_msg_0_}'
 
 #source ~/.pyenv/versions/2.7.6/bin/aws_zsh_completer.sh
