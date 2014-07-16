@@ -34,9 +34,9 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'tmux' \
-  'python' \
-  'ruby'
+  'ruby' 
 
+#  'python' \
 #
 # Editor
 #
