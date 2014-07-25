@@ -1,24 +1,23 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+#if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+#  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+#fi
 
-# Customize to your needs...
+# needed for Xdbus for some reason
+if [ -f ~/.Xdbus ]; then
+    . ~/.Xdbus
+fi
 
 export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_DATA_HOME="${HOME}/.local/share"
 
+export PATH="/usr/local/heroku/bin:${PATH}"
 export PATH="${HOME}/.cabal/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${HOME}/Programs/base/bin:${PATH}"
 export PATH="${HOME}/Programs/bin:${PATH}"
+
+autoload -U colors && colors
 
 # load rc files
 ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/config.d
@@ -34,18 +33,10 @@ export BROWSER="firefox"
 export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
 
-# needed for Xdbus for some reason
-if [ -f ~/.Xdbus ]; then
-    . ~/.Xdbus
-fi
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 bindkey "^R" history-incremental-search-backward
 
-# Set ruby-info parameters.
-#zstyle ':prezto:module:ruby:info:version' format ' %F{white}%v%f'
-#export RPROMPT='${ruby_info[version]}${vcs_info_msg_0_}'
-
-#source ~/.pyenv/versions/2.7.6/bin/aws_zsh_completer.sh
+setopt PROMPT_SUBST PROMPT_PERCENT
+export PROMPT="%F{135}%n%f@%F{166}%m%f in %F{118}%~%f \
+\$(git_prompt_info) \
+\$(virtualenv_info)
+%(!.#.$) "
