@@ -19,14 +19,6 @@ export PATH="${HOME}/Programs/bin:${PATH}"
 
 autoload -U colors && colors
 
-# load rc files
-ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/config.d
-if [ -d "${ZSHRCDIR}" ]; then
-  for RCFILE in ${ZSHRCDIR}/*; do
-    source ${RCFILE}
-  done
-fi
-
 export EDITOR="vim"
 export SVN_EDITOR="vim"
 export BROWSER="firefox"
@@ -37,8 +29,21 @@ bindkey "^R" history-incremental-search-backward
 
 alias ls='ls -h --color'
 
+# prompt
+source ~/.config/zsh/zsh-vcs-prompt/zshrc.sh
+ZSH_VCS_PROMPT_ENABLE_CACHING='true'
+
 setopt PROMPT_SUBST PROMPT_PERCENT
-export PROMPT="%F{135}%n%f@%F{166}%m%f in %F{118}%~%f \
-\$(git_prompt_info) \
-\$(virtualenv_info)
+export PROMPT="%F{135}%n%f@%F{166}%m%f in %F{118}%~%f \$(vcs_super_info)\
+\$(pyenv_info)\$(rbenv_info)\$(nodenv_info)
 %(!.#.$) "
+
+# load rc files
+ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/config.d
+if [ -d "${ZSHRCDIR}" ]; then
+  for RCFILE in ${ZSHRCDIR}/*; do
+    source ${RCFILE}
+  done
+fi
+
+
