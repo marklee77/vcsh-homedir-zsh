@@ -35,6 +35,8 @@ export BIBINPUTS=".:${HOME}/Academia/biblio"
 
 bindkey "^R" history-incremental-search-backward
 
+alias ls='ls -h --color'
+
 setopt PROMPT_SUBST PROMPT_PERCENT
 export PROMPT="%F{135}%n%f@%F{166}%m%f in %F{118}%~%f \
 \$(git_prompt_info) \
