@@ -32,6 +32,18 @@ alias ls='ls -h --color'
 # prompt
 source ~/.config/zsh/zsh-vcs-prompt/zshrc.sh
 ZSH_VCS_PROMPT_ENABLE_CACHING='true'
+if [ "${ZSH_VCS_PROMPT_GIT_FORMATS[-1]}" != " " ]; then
+  ZSH_VCS_PROMPT_GIT_FORMATS+=' '
+fi
+if [ "${ZSH_VCS_PROMPT_GIT_ACTION_FORMATS[-1]}" != " " ]; then
+  ZSH_VCS_PROMPT_GIT_ACTION_FORMATS+=' '
+fi
+if [ "${ZSH_VCS_PROMPT_VCS_FORMATS[-1]}" != " " ]; then
+  ZSH_VCS_PROMPT_VCS_FORMATS+=' '
+fi
+if [ "${ZSH_VCS_PROMPT_VCS_ACTION_FORMATS[-1]}" != " " ]; then
+  ZSH_VCS_PROMPT_VCS_ACTION_FORMATS+=' '
+fi
 
 setopt PROMPT_SUBST PROMPT_PERCENT
 export PROMPT="%F{135}%n%f@%F{166}%m%f in %F{118}%~%f \$(vcs_super_info)\
