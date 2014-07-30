@@ -3,11 +3,6 @@
 #  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 #fi
 
-# needed for Xdbus for some reason
-if [ -f ~/.Xdbus ]; then
-    . ~/.Xdbus
-fi
-
 export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_DATA_HOME="${HOME}/.local/share"
 

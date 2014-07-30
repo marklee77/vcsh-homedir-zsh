@@ -1,1 +1,0 @@
-/home/marklee/.zprezto/runcoms/zshenv
