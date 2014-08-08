@@ -1,8 +1,3 @@
-# Source Prezto.
-#if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-#  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-#fi
-
 export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_DATA_HOME="${HOME}/.local/share"
 
@@ -10,7 +5,6 @@ export PATH="/usr/local/heroku/bin:${PATH}"
 export PATH="${HOME}/.cabal/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${HOME}/Programs/base/bin:${PATH}"
-export PATH="${HOME}/Programs/bin:${PATH}"
 
 autoload -U colors && colors
 
@@ -64,5 +58,3 @@ if [ -d "${ZSHRCDIR}" ]; then
     source ${RCFILE}
   done
 fi
-
-
