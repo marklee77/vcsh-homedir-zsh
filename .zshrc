@@ -16,7 +16,7 @@ export BIBINPUTS=".:${HOME}/Academia/biblio"
 
 bindkey "^R" history-incremental-search-backward
 
-alias ls='ls -h --color'
+alias ls='ls -h --color=auto'
 
 # prompt
 source ~/.config/zsh/zsh-vcs-prompt/zshrc.sh
