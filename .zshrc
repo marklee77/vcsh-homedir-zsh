@@ -35,8 +35,11 @@ if [ "${ZSH_VCS_PROMPT_VCS_ACTION_FORMATS[-1]}" != " " ]; then
 fi
 
 setopt PROMPT_SUBST PROMPT_PERCENT
+#export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
+#\$(vcs_super_info)\$(pyenv_info)\$(rbenv_info)\$(nodenv_info)
+#%(!.#.$) "
 export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
-\$(vcs_super_info)\$(pyenv_info)\$(rbenv_info)\$(nodenv_info)
+\$(vcs_super_info)\$(pyenv_info)
 %(!.#.$) "
 
 # ===== History
