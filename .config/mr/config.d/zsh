@@ -1,7 +1,3 @@
-[${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/zsh.git]
-checkout = vcsh clone https://gitlab.stillwell.me/mark/vcsh-homedir-zsh.git zsh
-setpush  = vcsh zsh remote set-url --push origin git@stillwell.me:mark/vcsh-homedir-zsh.git
-
 [${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zsh-vcs-prompt]
 checkout = git clone https://github.com/yonchu/zsh-vcs-prompt.git
 skip     = test "$1" = push
