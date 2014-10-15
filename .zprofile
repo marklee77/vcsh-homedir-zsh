@@ -3,7 +3,7 @@ for VARVAL in $(gnome-keyring-daemon --components=ssh,gpg,secrets,pkcs11 --start
     export ${VARVAL}
 done
 
-# fix keyboard for X
+# for some reason this doesn't seem to take in .xsession...
 if [ -n "${DISPLAY}" ]; then
     setxkbmap gb -option inet:evdev -option caps:escape -option compose:menu
 fi
