@@ -55,7 +55,7 @@ setopt hist_verify # don't execute, just expand history
 setopt share_history # imports new commands and appends typed commands to history
 
 # load rc files
-ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/config.d
+ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/rc.d
 if [ -d "${ZSHRCDIR}" ]; then
   for RCFILE in ${ZSHRCDIR}/*; do
     source ${RCFILE}
