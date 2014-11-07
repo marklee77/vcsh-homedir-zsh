@@ -63,8 +63,8 @@ if [ -d "${ZSHRCDIR}" ]; then
 fi
 
 # for some reason this doesn't seem to take in .xsession...
-if [ -n "${DISPLAY}" ]; then
-    for VARVAL in $(gnome-keyring-daemon --components=ssh,gpg,secrets,pkcs11 --start); do
-        export ${VARVAL}
-    done
-fi
+#if [ -n "${DISPLAY}" ]; then
+#    for VARVAL in $(gnome-keyring-daemon --components=ssh,gpg,secrets,pkcs11 --start); do
+#        export ${VARVAL}
+#    done
+#fi
