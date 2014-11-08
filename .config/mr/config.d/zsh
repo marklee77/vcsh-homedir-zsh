@@ -1,3 +1,4 @@
 [${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zsh-vcs-prompt]
 checkout = git clone https://github.com/yonchu/zsh-vcs-prompt.git
-skip     = test "$1" = push
+skip     = [ "$1" = push ] || [ "$1" = autopush ]
+
