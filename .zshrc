@@ -4,7 +4,6 @@ export XDG_DATA_HOME="${HOME}/.local/share"
 export PATH="/usr/local/heroku/bin:${PATH}"
 export PATH="${HOME}/.cabal/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
-export PATH="${HOME}/Programs/base/bin:${PATH}"
 
 autoload -U colors && colors
 
