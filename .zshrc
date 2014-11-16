@@ -4,7 +4,6 @@ export XDG_DATA_HOME="${HOME}/.local/share"
 export PATH="/usr/local/heroku/bin:${PATH}"
 export PATH="${HOME}/.cabal/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
-export PATH="${HOME}/Programs/base/bin:${PATH}"
 
 autoload -U colors && colors
 
@@ -63,9 +62,8 @@ if [ -d "${ZSHRCDIR}" ]; then
 fi
 
 # for some reason this doesn't seem to take in .xsession...
-if [ -n "${DISPLAY}" ]; then
-    setxkbmap gb -option inet:evdev -option caps:escape -option compose:menu
-    for VARVAL in $(gnome-keyring-daemon --components=ssh,gpg,secrets,pkcs11 --start); do
-        export ${VARVAL}
-    done
-fi
+#if [ -n "${DISPLAY}" ]; then
+#    for VARVAL in $(gnome-keyring-daemon --components=ssh,gpg,secrets,pkcs11 --start); do
+#        export ${VARVAL}
+#    done
+#fi
