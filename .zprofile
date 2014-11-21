@@ -5,4 +5,3 @@ if [ -d "${ZSHPROFILEDIR}" ]; then
         source ${RCFILE}
     done
 fi
-
