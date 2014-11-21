@@ -1,17 +1,4 @@
-export XDG_CONFIG_HOME="${HOME}/.config"
-export XDG_DATA_HOME="${HOME}/.local/share"
-
-export PATH="/usr/local/heroku/bin:${PATH}"
-export PATH="${HOME}/.cabal/bin:${PATH}"
-export PATH="${HOME}/.local/bin:${PATH}"
-
 autoload -U colors && colors
-
-export EDITOR="vim"
-export SVN_EDITOR="vim"
-export BROWSER="firefox"
-export TERMINAL="urxvtcd"
-export BIBINPUTS=".:${HOME}/Academia/biblio"
 
 bindkey "^R" history-incremental-search-backward
 
