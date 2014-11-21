@@ -41,7 +41,7 @@ export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
 #\$(vcs_super_info)
 #%(!.#.$) "
 
-# ===== History
+# history
 setopt append_history # Allow multiple terminal sessions to all append to one zsh command history
 setopt extended_history # save timestamp of command and duration
 setopt inc_append_history # Add comamnds as they are typed, don't wait until shell exit
@@ -60,10 +60,3 @@ if [ -d "${ZSHRCDIR}" ]; then
     source ${RCFILE}
   done
 fi
-
-# for some reason this doesn't seem to take in .xsession...
-#if [ -n "${DISPLAY}" ]; then
-#    for VARVAL in $(gnome-keyring-daemon --components=ssh,gpg,secrets,pkcs11 --start); do
-#        export ${VARVAL}
-#    done
-#fi
