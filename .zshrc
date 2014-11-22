@@ -36,6 +36,7 @@ setopt PROMPT_SUBST PROMPT_PERCENT
 export PROMPT_INFO="\$(vcs_super_info)\$(pyenv_info)\$(rbenv_info)\$(nodenv_info)"
 
 # load rc files
+# FIXME: run-parts --list...
 ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/rc.d
 if [ -d "${ZSHRCDIR}" ]; then
   for RCFILE in ${ZSHRCDIR}/*; do
@@ -46,4 +47,3 @@ fi
 export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
 ${PROMPT_INFO}
 %(!.#.$) "
-
