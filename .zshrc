@@ -33,13 +33,13 @@ setopt hist_verify
 setopt share_history
 
 setopt PROMPT_SUBST PROMPT_PERCENT
-export PROMPT_INFO="\$(vcs_super_info)\$(pyenv_info)\$(rbenv_info)\$(nodenv_info)"
+export PROMPT_INFO="\$(vcs_super_info)\$(rbenv_info)\$(nodenv_info)"
 
 # load rc files
 # FIXME: run-parts --list...
 ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/rc.d
 if [ -d "${ZSHRCDIR}" ]; then
-  for RCFILE in ${ZSHRCDIR}/*; do
+  for RCFILE in $(run-parts --list ${ZSHRCDIR}); do
     source ${RCFILE}
   done
 fi
