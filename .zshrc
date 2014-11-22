@@ -33,7 +33,7 @@ setopt hist_verify
 setopt share_history
 
 setopt PROMPT_SUBST PROMPT_PERCENT
-export PROMPT_INFO="\$(vcs_super_info)\$(rbenv_info)\$(nodenv_info)"
+export PROMPT_INFO="\$(vcs_super_info)"
 
 # load rc files
 # FIXME: run-parts --list...
