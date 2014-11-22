@@ -15,6 +15,10 @@ export BROWSER="firefox"
 export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
 
+export HISTFILE="${HOME}/.zhistory"
+export HISTSIZE=250
+export SAVEHIST=200
+
 # load profile files
 ZSHPROFILEDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/profile.d
 if [ -d "${ZSHPROFILEDIR}" ]; then

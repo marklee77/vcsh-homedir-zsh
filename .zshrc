@@ -29,9 +29,6 @@ export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
 #%(!.#.$) "
 
 # history
-export HISTFILE="${HOME}/.zhistory"
-export HISTSIZE=250
-export SAVEHIST=200
 setopt append_history # Allow multiple terminal sessions to all append to one zsh command history
 setopt extended_history # save timestamp of command and duration
 setopt inc_append_history # Add comamnds as they are typed, don't wait until shell exit
