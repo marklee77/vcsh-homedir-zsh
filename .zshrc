@@ -24,9 +24,6 @@ setopt PROMPT_SUBST PROMPT_PERCENT
 export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
 \$(vcs_super_info)\$(pyenv_info)\$(rbenv_info)\$(nodenv_info)
 %(!.#.$) "
-#export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
-#\$(vcs_super_info)
-#%(!.#.$) "
 
 # history
 setopt append_history # Allow multiple terminal sessions to all append to one zsh command history
