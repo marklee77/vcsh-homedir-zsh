@@ -16,8 +16,8 @@ export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
 
 export HISTFILE="${HOME}/.zhistory"
-export HISTSIZE=250
-export SAVEHIST=200
+export HISTSIZE=1000
+export SAVEHIST=800
 
 # load profile files
 ZSHPROFILEDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/profile.d
