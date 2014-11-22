@@ -50,3 +50,4 @@ if [ -d "${ZSHRCDIR}" ]; then
     source ${RCFILE}
   done
 fi
+
