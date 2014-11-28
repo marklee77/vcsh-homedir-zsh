@@ -6,6 +6,7 @@
 !.config/zsh
 !.config/zsh/*
 !.config/zsh/profile.d/*
+!.config/zsh/rc.d/*
 !.gitignore.d
 !.gitignore.d/zsh
 !.inputrc
