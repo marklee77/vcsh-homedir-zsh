@@ -3,6 +3,9 @@
 !.config/mr
 !.config/mr/config.d
 !.config/mr/config.d/zsh
+!.config/zsh
+!.config/zsh/*
+!.config/zsh/profile.d/*
 !.gitignore.d
 !.gitignore.d/zsh
 !.inputrc
