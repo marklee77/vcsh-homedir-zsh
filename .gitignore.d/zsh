@@ -5,8 +5,8 @@
 !.config/mr/config.d/zsh
 !.config/zsh
 !.config/zsh/*
-!.config/zsh/profile.d/*
-!.config/zsh/rc.d/*
+!.config/zsh
+!.config/zsh/rc.d/05-dircolors
 !.gitignore.d
 !.gitignore.d/zsh
 !.inputrc
