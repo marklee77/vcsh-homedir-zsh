@@ -44,6 +44,7 @@ if [ -d "${ZSHRCDIR}" ]; then
   done
 fi
 
-export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
+#export PROMPT="%F{135}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
+export PROMPT="%F{magenta}%n%f@%F{166}%m%f:%F{118}%~%f %F{026}%*%f, %F{021}%D%f \
 ${PROMPT_INFO}
 %(!.#.$) "
