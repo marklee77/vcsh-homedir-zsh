@@ -1,6 +1,9 @@
 umask 077
 
 export XDG_CONFIG_HOME="${HOME}/.config"
+# workaround for bug in vcsh on ubuntu 14.04...
+export XDH_CONFIG_HOME="${XDG_CONFIG_HOME}"
+
 export XDG_DATA_HOME="${HOME}/.local/share"
 
 typeset -U path
