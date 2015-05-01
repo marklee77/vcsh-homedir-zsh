@@ -36,7 +36,6 @@ setopt PROMPT_SUBST PROMPT_PERCENT
 export PROMPT_INFO="\$(vcs_super_info)"
 
 # load rc files
-# FIXME: run-parts --list...
 ZSHRCDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/rc.d
 if [ -d "${ZSHRCDIR}" ]; then
   for RCFILE in $(run-parts --list ${ZSHRCDIR}); do
