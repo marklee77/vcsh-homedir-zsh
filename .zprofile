@@ -30,3 +30,7 @@ if [ -d "${ZSHPROFILEDIR}" ]; then
         source ${RCFILE}
     done
 fi
+
+# this should probably be in its own project...
+export GOPATH=${HOME}/Projects/go
+path+="${HOME}/Projects/go/bin"
