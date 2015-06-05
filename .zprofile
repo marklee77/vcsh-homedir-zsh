@@ -23,6 +23,8 @@ export HISTFILE="${HOME}/.zhistory"
 export HISTSIZE=1000
 export SAVEHIST=800
 
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
 # load profile files
 ZSHPROFILEDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/profile.d
 if [ -d "${ZSHPROFILEDIR}" ]; then
