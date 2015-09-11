@@ -35,4 +35,5 @@ fi
 
 # this should probably be in its own project...
 export GOPATH=${HOME}/Projects/go
+export GOROOT=${HOME}/Programs/base/apps/go
 path+="${HOME}/Projects/go/bin"
