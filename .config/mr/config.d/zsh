@@ -5,4 +5,3 @@ skip     = [ "$1" = push ] || [ "$1" = autopush ]
 [${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zsh-vcs-prompt]
 checkout = git clone https://github.com/yonchu/zsh-vcs-prompt.git
 skip     = [ "$1" = push ] || [ "$1" = autopush ]
-
