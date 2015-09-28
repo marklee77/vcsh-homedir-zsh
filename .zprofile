@@ -13,7 +13,6 @@ path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
 path+="/usr/local/heroku/bin"
 
-export
 export EDITOR="vim"
 export SVN_EDITOR="vim"
 export BROWSER="firefox"
