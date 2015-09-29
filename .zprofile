@@ -11,7 +11,8 @@ path=("${HOME}/Programs/bin" $path)
 path=("${HOME}/Programs/base/bin" $path)
 path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
-path+="/usr/local/heroku/bin"
+
+export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man -w)"
 
 export EDITOR="vim"
 export SVN_EDITOR="vim"
