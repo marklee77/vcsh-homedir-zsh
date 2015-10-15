@@ -14,6 +14,8 @@ path=("${HOME}/.local/bin" $path)
 
 export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man -w)"
 
+export LD_LIBRARY_PATH="${HOME}/Programs/base/lib"
+
 export EDITOR="vim"
 export SVN_EDITOR="vim"
 export BROWSER="firefox"
