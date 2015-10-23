@@ -9,6 +9,7 @@ export XDG_DATA_HOME="${HOME}/.local/share"
 typeset -U path
 path=("${HOME}/Programs/bin" $path)
 path=("${HOME}/Programs/base/bin" $path)
+path=("${HOME}/Programs/base/sbin" $path)
 path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
 
