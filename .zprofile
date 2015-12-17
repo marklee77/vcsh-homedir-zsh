@@ -13,6 +13,8 @@ path=("${HOME}/Programs/base/sbin" $path)
 path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
 
+fpath=(${HOME}/Programs/base/share/zsh/site-functions $fpath)
+
 export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man -w)"
 
 export LD_LIBRARY_PATH="${HOME}/Programs/base/lib"
