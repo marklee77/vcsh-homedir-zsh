@@ -34,7 +34,7 @@ function _start_paste() {
 function _end_paste() {
     bindkey -v
     LBUFFER+=$_paste_content
-    #unset _paste_content
+    unset _paste_content
 }
 
 function _paste_insert() {
