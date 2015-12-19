@@ -19,8 +19,9 @@ export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man 
 
 export LD_LIBRARY_PATH="${HOME}/Programs/base/lib"
 
-export EDITOR="vim"
-export SVN_EDITOR="vim"
+export EDITOR="vi"
+export SVN_EDITOR="${EDITOR}"
+export VISUAL="${EDITOR}"
 export BROWSER="firefox"
 export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
