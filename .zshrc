@@ -21,15 +21,17 @@ if [ "${ZSH_VCS_PROMPT_VCS_ACTION_FORMATS[-1]}" != " " ]; then
 fi
 
 # history
-setopt append_history 
 setopt extended_history
 setopt inc_append_history
-setopt hist_expire_dups_first 
 setopt hist_ignore_dups 
+setopt hist_expire_dups_first 
 setopt hist_ignore_space 
+setopt hist_save_no_dups
 setopt hist_find_no_dups 
 setopt hist_reduce_blanks 
 setopt hist_verify 
+setopt hist_no_store
+setopt hist_no_functions
 setopt share_history
 
 setopt PROMPT_SUBST PROMPT_PERCENT
