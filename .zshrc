@@ -28,7 +28,7 @@ setopt hist_expire_dups_first
 setopt hist_ignore_space 
 setopt hist_save_no_dups
 setopt hist_find_no_dups 
-setopt hist_reduce_blanks 
+unsetopt hist_reduce_blanks 
 setopt hist_verify 
 setopt hist_no_store
 setopt hist_no_functions
