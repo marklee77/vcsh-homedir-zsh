@@ -49,3 +49,5 @@ fi
 export PROMPT="%F{magenta}%n%f@%F{yellow}%m%f:%F{green}%~%f %F{cyan}%*%f, %F{blue}%D%f \
 ${PROMPT_INFO}
 %(!.#.$) "
+
+typeset -U PATH
