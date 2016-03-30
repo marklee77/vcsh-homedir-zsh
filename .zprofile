@@ -1,3 +1,5 @@
+[ -f /etc/profile ] && source /etc/profile
+
 umask 077
 
 export XDG_CONFIG_HOME="${HOME}/.config"
