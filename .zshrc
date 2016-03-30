@@ -45,12 +45,16 @@ if [ -d "${ZSHRCDIR}" ]; then
   done
 fi
 
+if [ -n "$SSH_TTY" ]; then
+export PROMPT="%F{magenta}%n%f@%F{yellow}%m%f:%F{green}%~%f \
+%F{cyan}%*%f, %F{blue}%D%f \
+${PROMPT_INFO}
+%F{red}%(!.#.$)%f "
+else
 export PROMPT="%F{magenta}%n%f@%F{yellow}%m%f:%F{green}%~%f \
 %F{cyan}%*%f, %F{blue}%D%f \
 ${PROMPT_INFO}
 %(!.#.$) "
-
-export PROMPT="%F{cyan}%*%f %F{green}%~%f ${PROMPT_INFO}
-%(!.#.$) "
+fi
 
 typeset -U PATH
