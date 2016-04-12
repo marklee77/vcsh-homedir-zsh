@@ -23,13 +23,13 @@ fi
 # history
 setopt extended_history
 setopt inc_append_history
-setopt hist_ignore_dups 
-setopt hist_expire_dups_first 
-setopt hist_ignore_space 
+setopt hist_ignore_dups
+setopt hist_expire_dups_first
+setopt hist_ignore_space
 setopt hist_save_no_dups
-setopt hist_find_no_dups 
-unsetopt hist_reduce_blanks 
-setopt hist_verify 
+setopt hist_find_no_dups
+unsetopt hist_reduce_blanks
+setopt hist_verify
 setopt hist_no_store
 setopt hist_no_functions
 setopt share_history
@@ -46,7 +46,7 @@ if [ -d "${ZSHRCDIR}" ]; then
 fi
 
 if [ -n "$SSH_TTY" ]; then
-export PROMPT="%F{magenta}%n%f@%F{yellow}%m%f:%F{green}%~%f \
+export PROMPT="%F{055}%n%f@%F{245}%m%f:%F{green}%~%f \
 %F{cyan}%*%f, %F{blue}%D%f \
 ${PROMPT_INFO}
 %F{red}%(!.#.$)%f "
