@@ -24,7 +24,7 @@ export LD_LIBRARY_PATH="${HOME}/Programs/base/lib"
 export EDITOR="vi"
 export SVN_EDITOR="${EDITOR}"
 export VISUAL="${EDITOR}"
-export BROWSER="firefox"
+export BROWSER="chromium-browser"
 export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
 
