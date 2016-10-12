@@ -15,7 +15,7 @@ path=("${HOME}/Programs/base/sbin" $path)
 path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
 
-fpath=(${HOME}/Programs/base/share/zsh/site-functions $fpath)
+fpath=(${HOME}/Programs/base/share/zsh/site-functions ${HOME}/.config/zsh/completion.d $fpath)
 
 export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man -w)"
 
