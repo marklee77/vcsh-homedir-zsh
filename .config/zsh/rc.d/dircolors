@@ -1,1 +1,1 @@
-eval $(dircolors "${XDG_CONFIG_HOME}/zsh/dircolors-solarized/dircolors.ansi-dark")
+eval $(dircolors "${XDG_CONFIG_HOME}/zsh/dircolors-solarized/dircolors.256dark")
