@@ -45,6 +45,5 @@ if [ -d "${ZSHPROFILEDIR}" ]; then
 fi
 
 # this should probably be in its own project...
-export GOROOT=${HOME}/Programs/base/apps/go
 export GOPATH=${HOME}/Projects/go
 path+="${HOME}/Projects/go/bin"
