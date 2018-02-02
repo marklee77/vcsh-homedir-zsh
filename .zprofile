@@ -31,8 +31,8 @@ export TERMINAL="urxvtcd"
 export BIBINPUTS=".:${HOME}/Academia/biblio"
 
 export HISTFILE="${HOME}/.zhistory"
-export HISTSIZE=2000
-export SAVEHIST=2000
+export HISTSIZE=5000
+export SAVEHIST=5000
 
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
