@@ -1,3 +1,6 @@
+# disable XON/XOFF flow control (Ctrl-S/Ctrl-Q)
+stty -ixon
+
 autoload -U colors && colors
 
 bindkey "^R" history-incremental-search-backward
