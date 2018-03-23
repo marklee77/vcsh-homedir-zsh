@@ -3,6 +3,9 @@ stty -ixon
 
 autoload -U colors && colors
 
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+bindkey "^K" history-beginning-search-backward-end
 bindkey "^R" history-incremental-search-backward
 
 alias ls='ls -h --color=auto'
