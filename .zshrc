@@ -17,7 +17,7 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 autoload -U compinit && compinit
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.cache/zsh
+zstyle ':completion:*' cache-path "${XDG_RUNTIME_DIR}/zshcache"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
