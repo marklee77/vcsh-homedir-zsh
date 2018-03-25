@@ -14,9 +14,8 @@ path=("${HOME}/Programs/base/sbin" $path)
 path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
 
-typeset -U fpath
-fpath=("${XDG_CONFIG_HOME}/zsh/functions.d" $fpath)
-fpath=("${XDG_CONFIG_HOME}/zsh/completions.d" $fpath)
+export FPATH="${XDG_CONFIG_HOME}/zsh/functions.d:$FPATH"
+export FPATH="${XDG_CONFIG_HOME}/zsh/completions.d:$FPATH"
 
 export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man -w)"
 
