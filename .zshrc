@@ -68,3 +68,5 @@ ${PROMPT_INFO}
 fi
 
 typeset -U PATH
+
+fpath=(${HOME}/.config/zsh/completion.d $fpath)
