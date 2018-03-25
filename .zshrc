@@ -5,8 +5,10 @@ autoload -U colors && colors
 
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
-bindkey "^K" history-beginning-search-backward-end
-bindkey "^R" history-incremental-search-backward
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+bindkey -M viins '^r' history-incremental-search-backward
+bindkey -M vicmd '^r' history-incremental-search-backward
 
 alias ls='ls -h --color=auto'
 
