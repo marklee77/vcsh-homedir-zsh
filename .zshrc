@@ -17,6 +17,11 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 autoload -U compinit
 compinit
 
+# completion cache
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.cache/zsh
+
 alias ls='ls -h --color=auto'
 
 # prompt
