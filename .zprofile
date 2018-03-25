@@ -4,9 +4,6 @@ umask 077
 
 export XDG_CONFIG_HOME="${HOME}/.config"
 
-# workaround for bug in vcsh on ubuntu 14.04...
-export XDH_CONFIG_HOME="${XDG_CONFIG_HOME}"
-
 export XDG_DATA_HOME="${HOME}/.local/share"
 export XDG_DATA_DIRS="${XDG_DATA_HOME}:${XDG_DATA_DIRS}"
 
@@ -17,7 +14,9 @@ path=("${HOME}/Programs/base/sbin" $path)
 path=("${HOME}/.cabal/bin" $path)
 path=("${HOME}/.local/bin" $path)
 
-fpath=(${HOME}/Programs/base/share/zsh/site-functions ${HOME}/.config/zsh/completion.d $fpath)
+typeset -U fpath
+fpath=("${XDG_CONFIG_HOME}/zsh/functions.d" $fpath)
+fpath=("${XDG_CONFIG_HOME}/zsh/completions.d" $fpath)
 
 export MANPATH="${HOME}/Programs/base/man:${HOME}/Programs/base/share/man:$(man -w)"
 
