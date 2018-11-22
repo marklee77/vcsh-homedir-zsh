@@ -45,3 +45,6 @@ fi
 # this should probably be in its own project...
 export GOPATH=${HOME}/Projects/go
 path=("${GOPATH}/bin" $path)
+
+# sigh
+path=($path "/usr/lib/google-cloud-sdk/bin")
